@@ -9,7 +9,7 @@ The `public contributions` and `private contributions` by users in Tunisia on `2
 
 There are `1000 users`  in Tunisia. You need at least `6 followers` to be on this list.
 
-<table>
+<table align="center">
 	<tr>
 		<th>#</th>
 		<th>Name</th>
