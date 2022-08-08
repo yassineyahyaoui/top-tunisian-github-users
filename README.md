@@ -7,8 +7,6 @@
 
 The `public contributions` and `private contributions` by users in Tunisia on `2022/7/5 7:06 PM UTC`. This list contains users from `Tunisia` and cities `Tunis` `Sfax` `Sousse` `Kairouan`.
 
-There are `138 countries` and `674 cities` can be found [here](https://github.com/gayanvoice/top-github-users).
-
 There are `1000 users`  in Tunisia. You need at least `6 followers` to be on this list.
 
 <table>
