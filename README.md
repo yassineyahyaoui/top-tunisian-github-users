@@ -1,4 +1,4 @@
-# Top GitHub Users By Total Contributions in Tunisiasrc="https://github.com/gayanvoice/insights/blob/master/graph/373383893/small/week.png" height="24">](https://github.com/gayanvoice/insights/blob/master/readme/373383893/week.md)
+# Top GitHub Users By Total Contributions in Tunisia
 
 
 <a href="https://gayanvoice.github.io/top-github-users/index.html">
