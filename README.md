@@ -50,8 +50,6 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 			Laby Damaro CAMARA
 		</td>
 		<td>Star Dev Cloud Group<br/></td>
-		<td><a href="https://twitter.com/laby_damaro">laby_damaro</a></td>
-		<td>Tunis, Tunisia</td>
 		<td>5416</td>
 		<td>5998</td>
 	</tr>
