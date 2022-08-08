@@ -2,19 +2,12 @@
 
 
 <a href="https://gayanvoice.github.io/top-github-users/index.html">
-	<img align="right" width="200" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg" alt="Tunisia">
+	<img align="right" width="150" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg" alt="Tunisia">
 </a>
 
 The `public contributions` and `private contributions` by users in Tunisia on `2022/7/5 7:06 PM UTC`. This list contains users from `Tunisia` and cities `Tunis` `Sfax` `Sousse` `Kairouan`.
 
 There are `1000 users`  in Tunisia. You need at least `6 followers` to be on this list.
-
-
-
-
-
-
-
 
 <table align="center" width="882">
 	<tr>
