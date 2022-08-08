@@ -9,20 +9,6 @@ The `public contributions` and `private contributions` by users in Tunisia on `2
 
 There are `1000 users`  in Tunisia. You need at least `6 followers` to be on this list.
 
-<table>
-	<tr>
-		<td>
-			<a href="https://github.com/gayanvoice/top-github-users/blob/main/markdown/public_contributions/tunisia.md">Top Users By Public Contributions</a>
-		</td>
-		<td>
-			<strong>Top Users By Total Contributions</strong>
-		</td>
-		<td>
-			<a href="https://github.com/gayanvoice/top-github-users/blob/main/markdown/followers/tunisia.md">Top Users By Followers</a>
-		</td>
-	</tr>
-</table>
-
 ### 🚀 Share on
 
 <table>
