@@ -12,14 +12,6 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 <table>
 	<tr>
 		<td>
-			Don't forget to star ⭐ this repository
-		</td>
-	</tr>
-</table>
-
-<table>
-	<tr>
-		<td>
 			<a href="https://github.com/gayanvoice/top-github-users/blob/main/markdown/public_contributions/tunisia.md">Top Users By Public Contributions</a>
 		</td>
 		<td>
