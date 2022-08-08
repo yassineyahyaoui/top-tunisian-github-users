@@ -14,8 +14,6 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 		<th>#</th>
 		<th>Name</th>
 		<th>Company</th>
-		<th>Twitter Username</th>
-		<th>Location</th>
 		<th>Public Contributions</th>
 		<th>Total Contributions</th>
 	</tr>
@@ -28,8 +26,6 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 			Mohamed Amine Mahmoud
 		</td>
 		<td>Sopra Hr Software </td>
-		<td>No Twitter Username</td>
-		<td>Tunis</td>
 		<td>1</td>
 		<td>10283</td>
 	</tr>
@@ -42,8 +38,6 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 			Jbira Neirouz
 		</td>
 		<td>No Company</td>
-		<td>No Twitter Username</td>
-		<td>Tunisia</td>
 		<td>1015</td>
 		<td>9530</td>
 	</tr>
@@ -56,8 +50,6 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 			Chayma Bouzaidi
 		</td>
 		<td>Higher School Of Communications<br/>Of<br/>Tunis<br/>-<br/>Sup'com<br/></td>
-		<td>No Twitter Username</td>
-		<td>Tunis, Tunisia</td>
 		<td>0</td>
 		<td>1</td>
 	</tr>
