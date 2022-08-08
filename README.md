@@ -12,10 +12,10 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 <table align="center" width="882">
 	<tr>
 		<th>#</th>
-		<th width="200">Name</th>
-		<th width="200">Company</th>
-		<th width="200">Public Contributions</th>
-		<th width="200">Total Contributions</th>
+		<th width="220">Name</th>
+		<th width="220">Company</th>
+		<th width="220">Public Contributions</th>
+		<th width="220">Total Contributions</th>
 	</tr>
 	<tr>
 		<td>1</td>
