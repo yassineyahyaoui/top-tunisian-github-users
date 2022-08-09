@@ -2,12 +2,14 @@
 
 
 <a href="https://gayanvoice.github.io/top-github-users/index.html">
-	<img align="right" width="150" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg" alt="Tunisia">
+	<img align="right" width="180" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg" alt="Tunisia">
 </a>
 
-The `public contributions` and `private contributions` by users in Tunisia on `2022/7/5 7:06 PM UTC`. This list contains users from `Tunisia` and cities `Tunis` `Sfax` `Sousse` `Kairouan`.
+The `total contributions` by users in Tunisia on `2022/7/5 7:06 PM UTC`. This list contains users from `Tunisia` and cities `Tunis` `Sfax` `Sousse` `Kairouan`.
 
 There are `1000 users`  in Tunisia. You need at least `6 followers` to be on this list.
+
+<br/>
 
 <table align="center" width="882">
 	<tr>
@@ -20,7 +22,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 		<td align="center">1</td>
 		<td>
 			<a href="https://github.com/MedAmineMahmoud">
-				<img src="https://avatars.githubusercontent.com/u/44852072?s=72&v=4" width="24" alt="Avatar of MedAmineMahmoud"> MedAmineMahmoud
+				<img src="https://avatars.githubusercontent.com/u/44852072?v=4" width="24" alt="Avatar of MedAmineMahmoud"> MedAmineMahmoud
 			</a><br/>
 			Mohamed Amine Mahmoud
 		</td>
@@ -31,7 +33,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 		<td align="center">2</td>
 		<td>
 			<a href="https://github.com/NeirouzJbira">
-				<img src="https://avatars.githubusercontent.com/u/72602604?s=72&u=e2af3019427288289db9bda670d755f50ae9a1a7&v=4" width="24" alt="Avatar of NeirouzJbira"> NeirouzJbira
+				<img src="https://avatars.githubusercontent.com/u/72602604?v=4" width="24" alt="Avatar of NeirouzJbira"> NeirouzJbira
 			</a><br/>
 			Jbira Neirouz
 		</td>
@@ -42,7 +44,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 		<td align="center">3</td>
 		<td>
 			<a href="https://github.com/camara94">
-				<img src="https://avatars.githubusercontent.com/u/25321749?s=72&u=d8beca57920290c3f54a2f3631423c521866e8ba&v=4" width="24" alt="Avatar of camara94"> camara94
+				<img src="https://avatars.githubusercontent.com/u/25321749?v=4" width="24" alt="Avatar of camara94"> camara94
 			</a><br/>
 			Laby Damaro CAMARA
 		</td>
