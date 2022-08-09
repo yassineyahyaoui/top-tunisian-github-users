@@ -2,7 +2,7 @@
 
 
 <a href="https://gayanvoice.github.io/top-github-users/index.html">
-	<img align="right" width="150" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg" alt="Tunisia">
+	<img align="right" width="180" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg" alt="Tunisia">
 </a>
 
 The `total contributions` by users in Tunisia on `2022/7/5 7:06 PM UTC`. This list contains users from `Tunisia` and cities `Tunis` `Sfax` `Sousse` `Kairouan`.
