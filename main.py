@@ -11,7 +11,9 @@ driver.find_element(By.CSS_SELECTOR, "a#raw-url").click()
 driver.implicitly_wait(60)
 full_content_raw = driver.find_element(By.CSS_SELECTOR, "pre").text
 
-print(full_content_raw[6444:])
+print(full_content_raw[6444:-5431])
+
+driver.quit()
 
 
 # driver.implicitly_wait(60)
