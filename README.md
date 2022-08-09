@@ -17,7 +17,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 		<th width="350">Total Contributions</th>
 	</tr>
 	<tr>
-		<td>1</td>
+		<td align="center">1</td>
 		<td>
 			<a href="https://github.com/MedAmineMahmoud">
 				<img src="https://avatars.githubusercontent.com/u/44852072?s=72&v=4" width="24" alt="Avatar of MedAmineMahmoud"> MedAmineMahmoud
@@ -28,7 +28,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 		<td>10283</td>
 	</tr>
 	<tr>
-		<td>2</td>
+		<td align="center">2</td>
 		<td>
 			<a href="https://github.com/NeirouzJbira">
 				<img src="https://avatars.githubusercontent.com/u/72602604?s=72&u=e2af3019427288289db9bda670d755f50ae9a1a7&v=4" width="24" alt="Avatar of NeirouzJbira"> NeirouzJbira
@@ -39,7 +39,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 		<td>9530</td>
 	</tr>
 	<tr>
-		<td>3</td>
+		<td align="center">3</td>
 		<td>
 			<a href="https://github.com/camara94">
 				<img src="https://avatars.githubusercontent.com/u/25321749?s=72&u=d8beca57920290c3f54a2f3631423c521866e8ba&v=4" width="24" alt="Avatar of camara94"> camara94
