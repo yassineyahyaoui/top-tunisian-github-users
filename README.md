@@ -25,7 +25,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 			Mohamed Amine Mahmoud
 		</td>
 		<td>Sopra Hr Software </td>
-		<td>10283</td>
+		<td align="center">10283</td>
 	</tr>
 	<tr>
 		<td align="center">2</td>
@@ -36,7 +36,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 			Jbira Neirouz
 		</td>
 		<td>No Company</td>
-		<td>9530</td>
+		<td align="center">9530</td>
 	</tr>
 	<tr>
 		<td align="center">3</td>
@@ -47,7 +47,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 			Laby Damaro CAMARA
 		</td>
 		<td>Star Dev Cloud Group<br/></td>
-		<td>5998</td>
+		<td align="center">5998</td>
 	</tr>
 </table>
 
