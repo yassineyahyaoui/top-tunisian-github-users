@@ -16,17 +16,18 @@ for avatar in avatars_list:
 for user in users_list:
     driver.get("https://github.com/" + user)
     driver.implicitly_wait(60)
-    try:
+    if driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text != "":
         name = driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text
-    except:
-        name = "None"
+    else:
+        name = "No name"
+    avatar = driver.find_element(By.CSS_SELECTOR, "img.avatar.avatar-user.width-full.border.color-bg-default").get_attribute("src")
     contribution = driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-31]
     try:
         company = driver.find_element(By.CSS_SELECTOR, "li.vcard-detail.pt-1.css-truncate.css-truncate-target.hide-sm.hide-md span.p-org div").text
     except:
-        company = "None"
+        company = "No company"
 
-    print(user, name, company, contribution)
+    print(user, name, avatar, company, contribution)
 
 
 
