@@ -16,7 +16,10 @@ for avatar in avatars_list:
 for user in users_list:
     driver.get("https://github.com/" + user)
     driver.implicitly_wait(60)
-    name = driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text
+    try:
+        name = driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text
+    except:
+        name = "None"
     contribution = driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-31]
     try:
         company = driver.find_element(By.CSS_SELECTOR, "li.vcard-detail.pt-1.css-truncate.css-truncate-target.hide-sm.hide-md span.p-org div").text
