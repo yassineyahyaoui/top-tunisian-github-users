@@ -14,7 +14,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 		<th width="80" align="center">#</th>
 		<th width="350">Name</th>
 		<th width="350">Company</th>
-		<th width="350">Total Contributions</th>
+		<th width="300">Total Contributions</th>
 	</tr>
 	<tr>
 		<td align="center">1</td>
