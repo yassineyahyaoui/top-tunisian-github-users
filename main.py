@@ -11,6 +11,8 @@ driver.find_element(By.CSS_SELECTOR, "a#raw-url").click()
 driver.implicitly_wait(60)
 full_content_raw = driver.find_element(By.CSS_SELECTOR, "pre").text
 
+print(full_content_raw[6444:])
+
 
 # driver.implicitly_wait(60)
 # email = driver.find_element(By.CSS_SELECTOR, "input#login_field")
