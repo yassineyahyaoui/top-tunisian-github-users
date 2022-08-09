@@ -6,14 +6,10 @@ driver = webdriver.Chrome()
 driver.get("https://github.com/gayanvoice/top-github-users/blob/main/markdown/total_contributions/tunisia.md")
 
 driver.implicitly_wait(60)
-driver.find_element(By.CSS_SELECTOR, "a#raw-url").click()
+my_list = driver.find_elements(By.CSS_SELECTOR, "table td a img[width='24']")
 
-driver.implicitly_wait(60)
-full_content_raw = driver.find_element(By.CSS_SELECTOR, "pre").text
-
-print(full_content_raw[6444:-5431])
-
-driver.quit()
+for item in my_list:
+    print(item.get_attribute("alt"))
 
 
 # driver.implicitly_wait(60)
