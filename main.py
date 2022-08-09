@@ -1,16 +1,22 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+driver = webdriver.Chrome()
+driver.get("https://github.com/gayanvoice/top-github-users/blob/main/markdown/total_contributions/tunisia.md")
+
+driver.implicitly_wait(60)
+driver.find_element(By.CSS_SELECTOR, "a#raw-url").click()
+
+driver.implicitly_wait(60)
+full_content_raw = driver.find_element(By.CSS_SELECTOR, "pre").text
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# driver.implicitly_wait(60)
+# email = driver.find_element(By.CSS_SELECTOR, "input#login_field")
+# password = driver.find_element(By.CSS_SELECTOR, "input#password")
+#
+# email.send_keys("muhamedyaseenyahyaoui@gmail.com")
+# password.send_keys("mayway2805")
+#
+# driver.find_element(By.CSS_SELECTOR, "input.btn.btn-primary.btn-block.js-sign-in-button").click()
