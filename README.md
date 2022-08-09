@@ -42,7 +42,7 @@ There are `1000 users`  in Tunisia. You need at least `6 followers` to be on thi
 		<td align="center">3</td>
 		<td>
 			<a href="https://github.com/camara94">
-				<img src="https://avatars.githubusercontent.com/u/25321749?s=72&u=d8beca57920290c3f54a2f3631423c521866e8ba&v=4" width="24" alt="Avatar of camara94"> camara94
+				<img src="https://avatars.githubusercontent.com/u/25321749?v=4" width="24" alt="Avatar of camara94"> camara94
 			</a><br/>
 			Laby Damaro CAMARA
 		</td>
