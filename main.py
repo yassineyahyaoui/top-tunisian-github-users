@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from datetime import datetime
 
 
 driver = webdriver.Chrome()
@@ -8,11 +9,12 @@ driver.get("https://github.com/gayanvoice/top-github-users/blob/main/markdown/to
 driver.implicitly_wait(60)
 avatars_list = driver.find_elements(By.CSS_SELECTOR, "table td a img[width='24']")
 
+users = []
 users_list = []
-
 for avatar in avatars_list:
     users_list.append(avatar.get_attribute("alt")[10:])
 
+i = 1
 for user in users_list:
     driver.get("https://github.com/" + user)
     driver.implicitly_wait(60)
@@ -27,7 +29,16 @@ for user in users_list:
     except:
         company = "No company"
 
-    print(user, name, avatar, company, contribution)
+    print(i, user, name, avatar, company, contribution)
+    users.append((i, user, name, avatar, company, contribution))
+    print(users[i - 1])
+    i = i + 1
+
+
+now = datetime.now()
+date = now.strftime("%Y %b %d %H:%M")
+
+
 
 
 
