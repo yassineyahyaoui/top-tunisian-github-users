@@ -20,15 +20,15 @@ def main():
     readme_after_table = readme_after_table_file.read()
     readme_after_table_file.close()
 
-    readme_file = open("README.txt", "w")
+    readme_file = open("README.md", "w")
     readme_file.write(readme_head)
     readme_file.close()
 
-    readme_file = open("README.txt", "a")
+    readme_file = open("README.md", "a")
     readme_file.write(date)
     readme_file.close()
 
-    readme_file = open("README.txt", "a")
+    readme_file = open("README.md", "a")
     readme_file.write(readme_before_table)
     readme_file.close()
 
@@ -63,23 +63,23 @@ def main():
         i = i + 1
 
 
-    readme_file = open("README.txt", "a")
+    readme_file = open("README.md", "a")
     readme_file.write(readme_after_table)
     readme_file.close()
 
 
 def write_user(index, username, name, avatar_url, company, total_contribution):
-    readme_file = open("README.txt", "a")
+    readme_file = open("README.md", "a")
     readme_file.write('<tr>\n' +
                       '    <td align="center">' + str(index) + '</td>\n' +
                       '    <td>\n' +
                       '        <a href="https://github.com/' + username + '">\n' +
-                      '            < img src = "' + avatar_url + '" width = "24" alt = "Avatar of ' + username + '" >' + username + '\n' +
+                      '            <img src="' + avatar_url + '" width = "24" alt = "Avatar of ' + username + '" >' + username + '\n' +
                       '        </a><br/>\n' +
-                      '    ' + name +
-                      '    </td>'
-                      '    <td>' + company + '</td>'
-                      '    <td align="center">' + total_contribution + '</td>'
+                      '    ' + name + '\n' +
+                      '    </td>\n'
+                      '    <td>' + company + '</td>\n'
+                      '    <td align="center">' + total_contribution + '</td>\n'
                       '</tr>\n')
     readme_file.close()
 
