@@ -1,3 +1,4 @@
+import requests
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -45,21 +46,22 @@ def main():
 
     i = 1
     for user in users_list:
-        driver.get("https://github.com/" + user)
-        if driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text != "":
-            name = driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text
-        else:
-            name = "No name"
-        avatar = driver.find_element(By.CSS_SELECTOR, "img.avatar.avatar-user.width-full.border.color-bg-default").get_attribute("src")
-        total_contribution = driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-31]
-        try:
-            company = driver.find_element(By.CSS_SELECTOR, "li.vcard-detail.pt-1.css-truncate.css-truncate-target.hide-sm.hide-md span.p-org div").text
-        except:
-            company = "No company"
+        if requests.get("https://github.com/" + user).status_code == 200:
+            driver.get("https://github.com/" + user)
+            if driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text != "":
+                name = driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text
+            else:
+                name = "No name"
+            avatar = driver.find_element(By.CSS_SELECTOR, "img.avatar.avatar-user.width-full.border.color-bg-default").get_attribute("src")
+            total_contribution = driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-31]
+            try:
+                company = driver.find_element(By.CSS_SELECTOR, "li.vcard-detail.pt-1.css-truncate.css-truncate-target.hide-sm.hide-md span.p-org div").text
+            except:
+                company = "No company"
 
-        print(i, user, name, avatar, company, total_contribution)
-        users.append((i, user, name, avatar, company, total_contribution))
-        i = i + 1
+            print(i, user, name, avatar, company, total_contribution)
+            users.append((i, user, name, avatar, company, total_contribution))
+            i = i + 1
 
     users.sort(key=lambda j: j[5], reverse=True)
 
