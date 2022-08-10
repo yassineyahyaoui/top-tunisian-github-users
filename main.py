@@ -42,7 +42,6 @@ users_list = []
 for avatar in avatars_list:
     users_list.append(avatar.get_attribute("alt")[10:])
 
-readme_file = open("README.txt", "a")
 i = 1
 for user in users_list:
     driver.get("https://github.com/" + user)
@@ -61,7 +60,6 @@ for user in users_list:
     readme_file.write("<tr>")
     print(i, user, name, avatar, company, total_contribution)
     i = i + 1
-readme_file.close()
 
 
 readme_file = open("README.txt", "a")
@@ -69,7 +67,16 @@ readme_file.write(readme_after_table)
 readme_file.close()
 
 
-def write_user(index, username, name, avatar, company, total_contribution)
+def write_user(index, username, name, avatar_url, company, total_contribution):
+    readme_file = open("README.txt", "a")
+    readme_file.write('<tr>' +
+                      '<td align="center">' + i + '</td>' +
+                      '<td align="center">' +
+                      '<a href="https://github.com/' + username + '">' + '< img src = "' + avatar_url + '" width = "24" alt = "Avatar of ' + username + '" >' + username + '</a><br/>' + name + '</td>'
+                      '<td>' + company + '</td>'
+                      '<td align="center">' + total_contribution + '</td>'
+                      '</tr>\n')
+    readme_file.close()
 
 
 # driver.implicitly_wait(60)
