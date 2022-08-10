@@ -53,14 +53,13 @@ def main():
             else:
                 name = "No name"
             avatar = driver.find_element(By.CSS_SELECTOR, "img.avatar.avatar-user.width-full.border.color-bg-default").get_attribute("src")
-            total_contribution = driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-31]
             try:
                 company = driver.find_element(By.CSS_SELECTOR, "li.vcard-detail.pt-1.css-truncate.css-truncate-target.hide-sm.hide-md span.p-org div").text
             except:
                 company = "No company"
+            total_contribution = int(driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-31].replace(",", ""))
 
             print(i, user, name, avatar, company, total_contribution)
-            write_user(i, user, name, avatar, company, total_contribution)
             users.append((i, user, name, avatar, company, total_contribution))
             i = i + 1
 
