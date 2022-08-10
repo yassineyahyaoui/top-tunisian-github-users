@@ -1,6 +1,6 @@
+from datetime import datetime
 # from selenium import webdriver
 # from selenium.webdriver.common.by import By
-# from datetime import datetime
 #
 #
 # driver = webdriver.Chrome()
@@ -35,8 +35,8 @@
 #     i = i + 1
 #
 #
-# now = datetime.now()
-# date = now.strftime("%Y %b %d %H:%M")
+now = datetime.now()
+date = now.strftime("%Y %b %d %H:%M")
 
 
 readme_head_file = open("readme-head.txt", "r")
@@ -45,6 +45,10 @@ readme_head_file.close()
 
 readme_file = open("README.txt", "w")
 readme_file.write(readme_head)
+readme_file.close()
+
+readme_file = open("README.txt", "a")
+readme_file.write(date)
 readme_file.close()
 
 
