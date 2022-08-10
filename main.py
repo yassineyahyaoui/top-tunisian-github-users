@@ -36,7 +36,6 @@ def main():
     driver = webdriver.Chrome()
     driver.get("https://github.com/gayanvoice/top-github-users/blob/main/markdown/total_contributions/tunisia.md")
 
-    driver.implicitly_wait(60)
     avatars_list = driver.find_elements(By.CSS_SELECTOR, "table td a img[width='24']")
 
     users = []
@@ -47,7 +46,6 @@ def main():
     i = 1
     for user in users_list:
         driver.get("https://github.com/" + user)
-        driver.implicitly_wait(60)
         if driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text != "":
             name = driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text
         else:

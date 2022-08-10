@@ -5,7 +5,7 @@
 	<img align="right" width="180" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg" alt="Tunisia">
 </a>
 
-The `total contributions` by users in Tunisia on `10 Aug 2022 10:54`. This list contains users from `Tunisia` and cities `Tunis` `Sfax` `Sousse` `Kairouan`.
+The `total contributions` by users in Tunisia on `10 Aug 2022 12:27`. This list contains users from `Tunisia` and cities `Tunis` `Sfax` `Sousse` `Kairouan`.
 
 There are `1000 users`  in Tunisia. You need at least `6 followers` to be on this list.
 
