@@ -75,7 +75,7 @@ def main():
 
 
 def write_user(index, username, name, avatar_url, company, total_contribution):
-    readme_file = open("README.md", "a")
+    readme_file = open("README.md", "a", encoding="utf-8")
     readme_file.write('<tr>\n' +
                       '    <td align="center">' + str(index) + '</td>\n' +
                       '    <td>\n' +
