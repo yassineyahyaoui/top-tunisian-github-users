@@ -70,12 +70,16 @@ def main():
 
 def write_user(index, username, name, avatar_url, company, total_contribution):
     readme_file = open("README.txt", "a")
-    readme_file.write('<tr>' +
-                      '<td align="center">' + str(index) + '</td>' +
-                      '<td align="center">' +
-                      '<a href="https://github.com/' + username + '">' + '< img src = "' + avatar_url + '" width = "24" alt = "Avatar of ' + username + '" >' + username + '</a><br/>' + name + '</td>'
-                      '<td>' + company + '</td>'
-                      '<td align="center">' + total_contribution + '</td>'
+    readme_file.write('<tr>\n' +
+                      '    <td align="center">' + str(index) + '</td>\n' +
+                      '    <td>\n' +
+                      '        <a href="https://github.com/' + username + '">\n' +
+                      '            < img src = "' + avatar_url + '" width = "24" alt = "Avatar of ' + username + '" >' + username + '\n' +
+                      '        </a><br/>\n' +
+                      '    ' + name +
+                      '    </td>'
+                      '    <td>' + company + '</td>'
+                      '    <td align="center">' + total_contribution + '</td>'
                       '</tr>\n')
     readme_file.close()
 
