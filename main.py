@@ -43,12 +43,20 @@ readme_head_file = open("readme-head.txt", "r")
 readme_head = readme_head_file.read()
 readme_head_file.close()
 
+readme_before_table_file = open("readme-before-table.txt", "r")
+readme_before_table = readme_before_table_file.read()
+readme_before_table_file.close()
+
 readme_file = open("README.txt", "w")
 readme_file.write(readme_head)
 readme_file.close()
 
 readme_file = open("README.txt", "a")
 readme_file.write(date)
+readme_file.close()
+
+readme_file = open("README.txt", "a")
+readme_file.write(readme_before_table)
 readme_file.close()
 
 
