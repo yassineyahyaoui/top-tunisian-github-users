@@ -39,6 +39,7 @@ def main():
     driver.implicitly_wait(60)
     avatars_list = driver.find_elements(By.CSS_SELECTOR, "table td a img[width='24']")
 
+    users = []
     users_list = []
     for avatar in avatars_list:
         users_list.append(avatar.get_attribute("alt")[10:])
@@ -59,9 +60,13 @@ def main():
             company = "No company"
 
         print(i, user, name, avatar, company, total_contribution)
-        write_user(i, user, name, avatar, company, total_contribution)
+        users.append((i, user, name, avatar, company, total_contribution))
         i = i + 1
 
+    users.sort(key=lambda j: j[5], reverse=True)
+
+    for user in users:
+        write_user(user[0], user[1], user[2], user[3], user[4], user[5])
 
     readme_file = open("README.md", "a")
     readme_file.write(readme_after_table)
