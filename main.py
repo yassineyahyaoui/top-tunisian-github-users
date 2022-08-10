@@ -60,6 +60,7 @@ def main():
                 company = "No company"
 
             print(i, user, name, avatar, company, total_contribution)
+            write_user(i, user, name, avatar, company, total_contribution)
             users.append((i, user, name, avatar, company, total_contribution))
             i = i + 1
 
