@@ -96,13 +96,3 @@ def write_user(index, username, name, avatar_url, company, total_contribution):
 
 if __name__ == "__main__":
     main()
-
-
-# driver.implicitly_wait(60)
-# email = driver.find_element(By.CSS_SELECTOR, "input#login_field")
-# password = driver.find_element(By.CSS_SELECTOR, "input#password")
-#
-# email.send_keys("muhamedyaseenyahyaoui@gmail.com")
-# password.send_keys("mayway2805")
-#
-# driver.find_element(By.CSS_SELECTOR, "input.btn.btn-primary.btn-block.js-sign-in-button").click()
