@@ -2,6 +2,8 @@
 
 There are `1000 users`  in Tunisia. You need at least `6 followers` to be on this list.
 
+This list is just an updated list from the [gayanvoice/top-github-users](https://github.com/gayanvoice/top-github-users) repo. I just scraped and sorted it.
+
 <br/>
 
 <table align="center" width="882">
