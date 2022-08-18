@@ -75,6 +75,7 @@ def main():
     readme_file = open(os.path.join("readme", "README.md"), "a")
     readme_file.write(readme_after_table)
     readme_file.close()
+    driver.quit()
 
 
 def write_user(index, username, name, avatar_url, company, total_contribution):
