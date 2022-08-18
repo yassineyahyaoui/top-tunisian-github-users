@@ -34,48 +34,10 @@ def main():
     readme_file.write(readme_before_table)
     readme_file.close()
 
-    driver = webdriver.Chrome()
-    driver.get("https://github.com/gayanvoice/top-github-users/blob/main/markdown/total_contributions/tunisia.md")
-
-    avatars_list = driver.find_elements(By.CSS_SELECTOR, "table td a img[width='24']")
-
-    users = []
-    users_list = []
-    for avatar in avatars_list:
-        users_list.append(avatar.get_attribute("alt")[10:])
-
-    i = 1
-    for user in users_list:
-        if requests.get("https://github.com/" + user).status_code == 200:
-            driver.get("https://github.com/" + user)
-            if driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text != "":
-                name = driver.find_element(By.CSS_SELECTOR, "span.p-name.vcard-fullname.d-block.overflow-hidden").text
-            else:
-                name = "No name"
-            avatar = driver.find_element(By.CSS_SELECTOR, "img.avatar.avatar-user.width-full.border.color-bg-default").get_attribute("src")
-            try:
-                company = driver.find_element(By.CSS_SELECTOR, "li.vcard-detail.pt-1.css-truncate.css-truncate-target.hide-sm.hide-md span.p-org div").text
-            except:
-                company = "No company"
-            try:
-                total_contribution = int(driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-31].replace(",", ""))
-            except:
-                total_contribution = int(driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-30].replace(",", ""))
-
-            print(i, user, name, avatar, company, total_contribution)
-            users.append((i, user, name, avatar, company, total_contribution))
-            i = i + 1
-
-    users.sort(key=lambda j: j[5], reverse=True)
-    i = 1
-    for user in users:
-        write_user(i, user[1], user[2], user[3], user[4], user[5])
-        i = i + 1
-
-    readme_file = open(os.path.join("readme", "README.md"), "a")
-    readme_file.write(readme_after_table)
-    readme_file.close()
-    driver.quit()
+    os.system('cmd /c "cd readme"')
+    os.system('cmd /c "git add ."')
+    os.system('cmd /c "git commit -m \"update\""')
+    os.system('cmd /c "git push"')
 
 
 def write_user(index, username, name, avatar_url, company, total_contribution):
