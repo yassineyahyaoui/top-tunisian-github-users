@@ -1,3 +1,4 @@
+import os
 import requests
 from datetime import datetime
 from selenium import webdriver
@@ -21,18 +22,17 @@ def main():
     readme_after_table = readme_after_table_file.read()
     readme_after_table_file.close()
 
-    readme_file = open("README.md", "w")
+    readme_file = open(os.path.join("readme", "README.md"), "w")
     readme_file.write(readme_head)
     readme_file.close()
 
-    readme_file = open("README.md", "a")
+    readme_file = open(os.path.join("readme", "README.md"), "a")
     readme_file.write(date)
     readme_file.close()
 
-    readme_file = open("README.md", "a")
+    readme_file = open(os.path.join("readme", "README.md"), "a")
     readme_file.write(readme_before_table)
     readme_file.close()
-
 
     driver = webdriver.Chrome()
     driver.get("https://github.com/gayanvoice/top-github-users/blob/main/markdown/total_contributions/tunisia.md")
@@ -57,24 +57,28 @@ def main():
                 company = driver.find_element(By.CSS_SELECTOR, "li.vcard-detail.pt-1.css-truncate.css-truncate-target.hide-sm.hide-md span.p-org div").text
             except:
                 company = "No company"
-            total_contribution = int(driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-31].replace(",", ""))
+            try:
+                total_contribution = int(driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-31].replace(",", ""))
+            except:
+                total_contribution = int(driver.find_element(By.CSS_SELECTOR, ".js-yearly-contributions .position-relative h2.f4.text-normal.mb-2").text[:-30].replace(",", ""))
 
             print(i, user, name, avatar, company, total_contribution)
             users.append((i, user, name, avatar, company, total_contribution))
             i = i + 1
 
     users.sort(key=lambda j: j[5], reverse=True)
-
+    i = 1
     for user in users:
-        write_user(user[0], user[1], user[2], user[3], user[4], user[5])
+        write_user(i, user[1], user[2], user[3], user[4], user[5])
+        i = i + 1
 
-    readme_file = open("README.md", "a")
+    readme_file = open(os.path.join("readme", "README.md"), "a")
     readme_file.write(readme_after_table)
     readme_file.close()
 
 
 def write_user(index, username, name, avatar_url, company, total_contribution):
-    readme_file = open("README.md", "a", encoding="utf-8")
+    readme_file = open(os.path.join("readme", "README.md"), "a", encoding="utf-8")
     readme_file.write('<tr>\n' +
                       '    <td align="center">' + str(index) + '</td>\n' +
                       '    <td>\n' +
@@ -84,7 +88,7 @@ def write_user(index, username, name, avatar_url, company, total_contribution):
                       '    ' + name + '\n' +
                       '    </td>\n'
                       '    <td>' + company + '</td>\n'
-                      '    <td align="center">' + total_contribution + '</td>\n'
+                      '    <td align="center">' + str(total_contribution) + '</td>\n'
                       '</tr>\n')
     readme_file.close()
 
