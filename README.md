@@ -622,7 +622,7 @@ This list is just an updated list from the [gayanvoice/top-github-users](https:/
         </a><br/>
     Mohamed Yassine Yahyaoui
     </td>
-    <td>No company</td>
+    <td>My company</td>
     <td align="center">908</td>
 </tr>
 <tr>
@@ -6760,7 +6760,7 @@ This list is just an updated list from the [gayanvoice/top-github-users](https:/
         </a><br/>
     wala naghmouchi
     </td>
-    <td>No company</td>
+    <td>Neirouz company</td>
     <td align="center">24</td>
 </tr>
 <tr>
