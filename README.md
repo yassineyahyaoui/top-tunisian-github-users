@@ -622,13 +622,8 @@ This list is just an updated list from the [gayanvoice/top-github-users](https:/
         </a><br/>
     Mohamed Yassine Yahyaoui
     </td>
-<<<<<<< HEAD
     <td>No company</td>
     <td align="center">917</td>
-=======
-    <td>My company</td>
-    <td align="center">908</td>
->>>>>>> 0048f9911923b3569505a2d805d40d0d9ecfd049
 </tr>
 <tr>
     <td align="center">56</td>
