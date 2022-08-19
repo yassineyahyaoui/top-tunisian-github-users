@@ -9,7 +9,7 @@ The `total contributions` by users in Tunisia on `19 Aug 2022 12:10`. This list 
 
 There are `1000 users`  in Tunisia. You need at least `6 followers` to be on this list.
 
-This list is just an updated list from the [gayanvoice/top-github-users](https://github.com/gayanvoice/top-github-users) repo. I just scraped, updated the numbers of total contributions and sorted it.
+This list is just an updated list from the [gayanvoice/top-github-users](https://github.com/gayanvoice/top-github-users) repo. I just scraped, have updated the numbers of total contributions and sorted it.
 
 <br/>
 
@@ -622,8 +622,13 @@ This list is just an updated list from the [gayanvoice/top-github-users](https:/
         </a><br/>
     Mohamed Yassine Yahyaoui
     </td>
+<<<<<<< HEAD
     <td>No company</td>
     <td align="center">917</td>
+=======
+    <td>My company</td>
+    <td align="center">908</td>
+>>>>>>> 0048f9911923b3569505a2d805d40d0d9ecfd049
 </tr>
 <tr>
     <td align="center">56</td>
@@ -6760,7 +6765,7 @@ This list is just an updated list from the [gayanvoice/top-github-users](https:/
         </a><br/>
     wala naghmouchi
     </td>
-    <td>No company</td>
+    <td>Neirouz company</td>
     <td align="center">24</td>
 </tr>
 <tr>
