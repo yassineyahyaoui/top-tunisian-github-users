@@ -54,7 +54,7 @@ def main():
                 name = "No name"
             avatar = driver.find_element(By.CSS_SELECTOR, "img.avatar.avatar-user.width-full.border.color-bg-default").get_attribute("src")
             try:
-                company = driver.find_element(By.CSS_SELECTOR, "li.vcard-detail.pt-1.css-truncate.css-truncate-target.hide-sm.hide-md span.p-org div").text
+                company = driver.find_element(By.CSS_SELECTOR, "li.vcard-detail.pt-1.hide-sm.hide-md span.p-org div").text
             except:
                 company = "No company"
             try:
